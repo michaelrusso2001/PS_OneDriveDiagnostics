@@ -194,12 +194,12 @@ If ( $SendToOutlook -like "Y" ) {
 
 	$Outlook = New-Object -ComObject Outlook.Application
 	$Mail = $Outlook.CreateItem(0)
-	$Mail.To = "support@productiv.com.au"
+	$Mail.To = "support@example.com"
 	$Mail.Subject = "OneDrive/Sharepoint Diagnostics"
 	$Mail.HTMLBody = $HTMLBody
 	$Mail.Display()
 }else{
-$HTMLBody += "<p></p><p><strong>You should copy the contents of this report to an email, and send to <a href=""mailto:support@productiv.com.au"">support@productiv.com.au</a></strong></p>"
+$HTMLBody += "<p></p><p><strong>You should copy the contents of this report to an email, and send to <a href=""mailto:support@example.com"">support@example.com</a></strong></p>"
 
 $HTMLBody > $global:filenamesaved
 
