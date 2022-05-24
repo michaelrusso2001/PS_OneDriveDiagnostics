@@ -172,7 +172,7 @@ $DuplicateFileReport= ($DuplicateFiles | Get-Item | Select FullName, LastWriteTi
 clear
 
 $HTMLBody = @"
-<p>Dear Bielby Data Services Team,</p>
+<p>Dear Support Team,</p>
 <p>Please see&nbsp;<strong>OneDrive and SharePoint Diagnostics</strong> result below.</p>
 "@
 $HTMLBody += "<p><b>Computer Name:</b> $env:COMPUTERNAME<br>"
